@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>todos</title>
+    </head>
+    <body>
+        <div class="main-wrapper">
+            <div class="todos-header">
+                <h1 class="todos-header-text">todos</h1>
+            </div>
+            <div class="todos-panel">
+                <div class="todos-panel-newtask">
+                    <input type="image" value="|\/|">
+                    <input type="text" placeholder="input new task">
+                </div>
+                <div class="todos-panel-list">
+                    <div class="todo-panel-list-task">
+                        <input type="checkbox">
+                        <name class="todo-panel-lint-task-text">Task 1</name>
+                    </div>
+                    <div class="todo-panel-list-task">
+                        <input type="checkbox">
+                        <name class="todo-panel-lint-task-text">Task 2</name>
+                    </div>
+                    <div class="todo-panel-list-task">
+                        <input type="checkbox">
+                        <name class="todo-panel-lint-task-text">Task 3</name>
+                    </div>
+                </div>
+                <div class="todos-panel-actions">
+                    <message class="todos-panel-actions-message">3 items left</message>
+                    <input type="radio" id="group1" name="group" value="all">
+                    <label for="group1">All</label> 
+                    <input type="radio" id="group2" name="group" value="active">
+                    <label for="group2">Active</label> 
+                    <input type="radio" id="group3" name="group" value="completed">
+                    <label for="group3">Completed</label> 
+                    <message class="todos-panel-actions-message">Clear completed</message>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
