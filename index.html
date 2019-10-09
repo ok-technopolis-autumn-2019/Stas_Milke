@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>todos</title>
+  </head>
+  <body>
+    <div class="main-wrapper">
+      <header class="todos-header">
+        <h1 class="todos-header-text">todos</h1>
+      </header>
+      <div class="todos-panel">
+        <section class="todos-panel-newtask">
+          <input
+            type="image"
+            class="todo-panel-button-checkall"
+            value="|\/|"
+            aria-label="Select all tasks"
+          />
+          <input
+            type="text"
+            class="todo-panel-newtask-input"
+            placeholder="input new task"
+            aria-label="Add new task"
+            autofocus="autofocus"
+          />
+        </section>
+        <section class="todos-panel-list">
+          <ul class="todos-panel-list tasks">
+            <li class="todo-panel-list-task">
+              <input
+                type="checkbox"
+                class="todo-panel-checkbox"
+                aria-label="Complete task: Task 1"
+              />
+              <span class="todo-panel-list-task-text">Task 1</span>
+              <input
+                type="image"
+                class="todo-panel-button-clear"
+                value="X"
+                aria-label="Delete task: Task 1"
+              />
+            </li>
+            <li class="todo-panel-list-task">
+              <input
+                type="checkbox"
+                class="todo-panel-checkbox"
+                aria-label="Complete task: Task 2"
+              />
+              <span class="todo-panel-list-task-text">Task 2</span>
+              <input
+                type="image"
+                class="todo-panel-button-clear"
+                value="X"
+                aria-label="Delete task: Task 2"
+              />
+            </li>
+            <li class="todo-panel-list-task">
+              <input
+                type="checkbox"
+                class="todo-panel-checkbox"
+                aria-label="Complete task: Task 3"
+              />
+              <span class="todo-panel-list-task-text">Task 3</span>
+              <input
+                type="image"
+                class="todo-panel-button-clear"
+                value="X"
+                aria-label="Delete task: Task 3"
+              />
+            </li>
+          </ul>
+        </section>
+        <section class="todos-panel-actions">
+          <message class="todos-panel-actions-message">3 items left</message>
+          <input
+            class="todo-panel-radiobutton"
+            type="radio"
+            id="group1"
+            name="group"
+            value="all"
+            checked="checked"
+            aria-label="Show all tasks"
+          />
+          <label for="group1">All</label>
+          <input
+            class="todo-panel-radiobutton"
+            type="radio"
+            id="group2"
+            name="group"
+            value="active"
+            aria-label="Show active tasks"
+          />
+          <label for="group2">Active</label>
+          <input
+            class="todo-panel-radiobutton"
+            type="radio"
+            id="group3"
+            name="group"
+            value="completed"
+            aria-label="Show completed tasks"
+          />
+          <label for="group3">Completed</label>
+          <input
+            type="button"
+            class="todos-panel-button-clearall"
+            value="Clear completed"
+            aria-label="Clear tasks"
+          />
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
