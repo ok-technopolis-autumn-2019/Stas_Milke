@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>todos</title>
+  </head>
+  <body>
+    <div class="main-wrapper">
+      <header class="todos-header">
+        <h1 class="todos-header__text">todos</h1>
+      </header>
+      <main class="todos-panel">
+        <section class="todos-panel-newtask">
+          <input
+            type="button"
+            class="todos-panel-button__checkall"
+            value="\/"
+            aria-label="Select all tasks"
+          />
+          <input
+            type="text"
+            class="todos-panel-newtask__input"
+            placeholder="input new task"
+            aria-label="Add new task"
+            autofocus="autofocus"
+          />
+        </section>
+        <section class="todos-panel-list">
+          <ul class="todos-panel-list tasks">
+            <li class="todos-panel-list__task">
+              <div class="todos-panel-list-task__view">
+                <input
+                  type="checkbox"
+                  class="todos-panel__checkbox"
+                  aria-label="Complete task: Task 1"
+                />
+                <span class="todos-panel-list-task__text">Task 1</span>
+                <input
+                  type="button"
+                  class="todos-panel__button-clear"
+                  value="X"
+                  aria-label="Delete task: Task 1"
+                />
+              </div>
+              <div class="todos-panel-list-task__edit" hidden="hidden">
+                <input
+                  type="text"
+                  class="todos-panel-list-task__input"
+                  value="Task 1"
+                  aria-label="Edit task: Task 1"
+                />
+              </div>
+            </li>
+            <li class="todos-panel-list__task">
+              <div class="todos-panel-list-task__view">
+                <input
+                  type="checkbox"
+                  class="todos-panel__checkbox"
+                  aria-label="Complete task: Task 2"
+                />
+                <span class="todos-panel-list-task__text">Task 2</span>
+                <input
+                  type="button"
+                  class="todos-panel__button-clear"
+                  value="X"
+                  aria-label="Delete task: Task 2"
+                />
+              </div>
+              <div class="todos-panel-list-task__edit" hidden="hidden">
+                <input
+                  type="text"
+                  class="todos-panel-list-task__input"
+                  value="Task 2"
+                  aria-label="Edit task: Task 2"
+                />
+              </div>
+            </li>
+            <li class="todos-panel-list__task">
+              <div class="todos-panel-list-task__view">
+                <input
+                  type="checkbox"
+                  class="todos-panel__checkbox"
+                  aria-label="Complete task: Task 3"
+                />
+                <span class="todos-panel-list-task__text">Task 3</span>
+                <input
+                  type="button"
+                  class="todos-panel__button-clear"
+                  value="X"
+                  aria-label="Delete task: Task 3"
+                />
+              </div>
+              <div class="todos-panel-list-task__edit" hidden="hidden">
+                <input
+                  type="text"
+                  class="todos-panel-list-task__input"
+                  value="Task 3"
+                  aria-label="Edit task: Task 3"
+                />
+              </div>
+            </li>
+          </ul>
+        </section>
+        <section class="todos-panel-actions actions-bar">
+          <div class="todos-panel-actions__counter">
+            <span class="todos-panel-actions__counter-text">3 items left</span>
+          </div>
+          <div class="todos-panel-actions-filters">
+            <label class="todos-panel-actions-filters__filter">
+              <input
+                class="todos-panel__radiobutton"
+                type="radio"
+                name="group"
+                value="all"
+                checked="checked"
+              />
+              <span class="task-panel__text" aria-label="Select all tasks"
+                >All</span
+              >
+            </label>
+            <label class="todos-panel-actions-filters__filter">
+              <input
+                class="todos-panel__radiobutton"
+                type="radio"
+                name="group"
+                value="active"
+                checked="checked"
+              />
+              <span class="task-panel__text" aria-label="Select all tasks"
+                >Active</span
+              >
+            </label>
+            <label class="todos-panel-actions-filters__filter">
+              <input
+                class="todos-panel__radiobutton"
+                type="radio"
+                name="group"
+                value="completed"
+                checked="checked"
+              />
+              <span class="task-panel__text" aria-label="Select all tasks"
+                >Completed</span
+              >
+            </label>
+          </div>
+          <div class="todos-panel-actions-clear">
+            <input
+              type="button"
+              class="todos-panel-button__clearall"
+              value="Clear completed"
+              aria-label="Clear tasks"
+            />
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
