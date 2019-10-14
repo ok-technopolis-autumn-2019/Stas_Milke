@@ -1,0 +1,209 @@
+div, section {
+    display: flex;
+}
+
+html, body { 
+    width: 100%;
+    background: #F2F2F2;
+}
+
+.todos-header__text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 100px;
+    line-height: 21px;
+    letter-spacing: -2.5px;
+    color: #CCCCCC;
+}
+
+.main-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+}
+
+.todos-panel-button__checkall {
+    height: 30px;
+    width: 30px;
+    background: url(checkall.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    margin: 5px;
+}
+
+.todos-panel-newtask {
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    border-bottom: 2px solid #F2F2F2;
+    
+}
+
+.todos-panel {
+    width: 500px;
+    background: #FFFFFF;
+}
+
+.todos-panel__checkbox-base {
+    display: none;
+}
+
+.todos-panel__checkbox-view {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    background: #FFFFFF;
+    border-radius: 30px;
+    border: 1px solid #E6E6E6;
+    margin: 5px;
+    align-items: center;
+}
+
+.todos-panel__checkbox-base:hover + span {
+    border: 1px solid #CCCCCC;
+}
+
+.todos-panel__checkbox-base:checked + span {
+    border: 1px solid #5DC2AF;
+    background-image: url(checkbox.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.todos-panel__button-clear {
+    opacity: 0;
+    background: url(delete.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none
+}
+
+.todos-panel-list-task__view:hover > .todos-panel__button-clear  {
+    opacity: 100;
+}
+
+.todos-panel-newtask__input {
+    flex-grow: 1;
+    border: none;
+    font-family: Roboto;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 21px;
+    letter-spacing: -0.6px;
+    color: #CCCCCC;
+}
+
+.todos-panel-list {
+    flex-direction: column;
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0px;
+}
+
+.todos-panel-list__task {
+    border-bottom: 2px solid #F2F2F2;
+}
+
+.todos-panel-list-task__edit {
+    display: none;
+}
+
+.todos-panel-list-task__input {
+    border: none;
+    height: 50px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 21px;
+    letter-spacing: -0.6px;
+}
+
+.todos-panel-list-task__view {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.todos-panel-list-task__view:hover {
+    background: #FAFAFA;
+}
+
+.todos-panel__button-clear {
+    height: 50px;
+    width: 50px;
+}
+
+.todos-panel-list-task__text {
+    flex-grow: 1;
+    font-family: Roboto;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 21px;
+    letter-spacing: -0.6px;
+}
+
+.actions-bar {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.todos-panel-actions-filters__filter {
+    margin: 10px;
+}
+
+.todos-panel-actions-filters {
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+.todos-panel-button__clearall {
+    background: #FFFFFF;
+    border: none;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: -0.35px;
+    color: #888888;
+}
+
+.todos-panel__radiobutton:checked + span {
+    border: 1px solid #EBDFDF;
+    border-radius: 5px;
+}
+
+.todos-panel-actions__counter-text {
+    padding: 4px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: -0.35px;
+    color: #888888;
+}
+
+.task-panel__text {
+    padding: 4px;
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: -0.35px;
+    color: #888888;
+}
+
+.todos-panel__radiobutton {
+    display: none;
+}
+
+
+
