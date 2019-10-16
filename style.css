@@ -1,9 +1,6 @@
-div, section {
-    display: flex;
-}
-
 html, body { 
-    width: 100%;
+    margin: 0;
+    padding: 0;
     background: #F2F2F2;
 }
 
@@ -21,7 +18,6 @@ html, body {
     display: flex;
     flex-direction: column;
     align-items: center; 
-    justify-content: center;
 }
 
 .todos-panel-button__checkall {
@@ -34,21 +30,28 @@ html, body {
     margin: 5px;
 }
 
+.todos-panel-button__checkall:focus{
+    border: 1px solid #EBDFDF;
+    border-radius: 5px;
+}
+
 .todos-panel-newtask {
-    flex-direction: row;
+    display: flex;
     justify-content: center;
     align-items: stretch;
     border-bottom: 2px solid #F2F2F2;
-    
 }
 
 .todos-panel {
+    display: flex;
+    flex-direction: column;
     width: 500px;
     background: #FFFFFF;
 }
 
 .todos-panel__checkbox-base {
-    display: none;
+    opacity: 0;
+    margin-right: -20px;
 }
 
 .todos-panel__checkbox-view {
@@ -62,15 +65,21 @@ html, body {
     align-items: center;
 }
 
-.todos-panel__checkbox-base:hover + span {
-    border: 1px solid #CCCCCC;
-}
-
-.todos-panel__checkbox-base:checked + span {
+.todos-panel__checkbox-base:checked + .todos-panel__checkbox > .todos-panel__checkbox-view {
     border: 1px solid #5DC2AF;
     background-image: url(checkbox.svg);
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.todos-panel__checkbox-base:focus + .todos-panel__checkbox > .todos-panel__checkbox-view,
+.todos-panel__checkbox-base:hover + .todos-panel__checkbox > .todos-panel__checkbox-view {
+    border: 1px solid #CCCCCC;
+}
+
+.todos-panel__checkbox-base:checked ~ .todos-panel-list-task__text {
+    text-decoration: line-through;
+    color: #CCCCCC;
 }
 
 .todos-panel__button-clear {
@@ -78,11 +87,17 @@ html, body {
     background: url(delete.svg);
     background-repeat: no-repeat;
     background-position: center;
-    border: none
+    border: none;
 }
 
-.todos-panel-list-task__view:hover > .todos-panel__button-clear  {
-    opacity: 100;
+.todos-panel__button-clear:focus {
+    border: 1px solid #EBDFDF;
+    border-radius: 5px;
+}
+
+.todos-panel-list-task__view:hover > .todos-panel__button-clear,
+.todos-panel-list-task__view:focus-within > .todos-panel__button-clear {
+    opacity: 1;
 }
 
 .todos-panel-newtask__input {
@@ -98,6 +113,7 @@ html, body {
 }
 
 .todos-panel-list {
+    display: flex;
     flex-direction: column;
     list-style-type: none;
     padding-left: 0;
@@ -124,12 +140,13 @@ html, body {
 }
 
 .todos-panel-list-task__view {
-    flex-direction: row;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.todos-panel-list-task__view:hover {
+.todos-panel-list-task__view:hover, 
+.todos-panel-list-task__view:focus-within {
     background: #FAFAFA;
 }
 
@@ -148,22 +165,24 @@ html, body {
 }
 
 .actions-bar {
-    flex-direction: row;
+    display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .todos-panel-actions-filters__filter {
-    margin: 10px;
+    display: flex;
+    margin: 5px;
 }
 
 .todos-panel-actions-filters {
+    display: flex;
     justify-content: center;
-    flex-direction: row;
     align-items: center;
 }
 
 .todos-panel-button__clearall {
+    padding: 5px;
     background: #FFFFFF;
     border: none;
     font-family: Roboto;
@@ -175,13 +194,22 @@ html, body {
     color: #888888;
 }
 
-.todos-panel__radiobutton:checked + span {
+.todos-panel-button__clearall:focus{
+    text-decoration: underline;
+}
+
+.todos-panel__radiobutton:checked + .task-panel__text {
     border: 1px solid #EBDFDF;
     border-radius: 5px;
+    padding: 4px;
+}
+
+.todos-panel__radiobutton:focus + .task-panel__text {
+    text-decoration: underline;
 }
 
 .todos-panel-actions__counter-text {
-    padding: 4px;
+    padding: 5px;
     font-family: Roboto;
     font-style: normal;
     font-weight: 300;
@@ -192,7 +220,7 @@ html, body {
 }
 
 .task-panel__text {
-    padding: 4px;
+    padding: 5px;
     font-family: Roboto;
     font-weight: 300;
     font-size: 14px;
@@ -202,7 +230,7 @@ html, body {
 }
 
 .todos-panel__radiobutton {
-    display: none;
+    opacity: 0;
 }
 
 
