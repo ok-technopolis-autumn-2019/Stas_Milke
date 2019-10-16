@@ -47,6 +47,7 @@ html, body {
     flex-direction: column;
     width: 500px;
     background: #FFFFFF;
+    box-shadow: 1px 1px 1px 1px #CCCCCC;
 }
 
 .todos-panel__checkbox-base {
@@ -90,9 +91,12 @@ html, body {
     border: none;
 }
 
-.todos-panel__button-clear:focus {
-    border: 1px solid #EBDFDF;
+.todos-panel__button-clear:focus,
+.todos-panel-button__clearall:focus,
+.todos-panel-button__checkall:focus {
+    border: 2px solid #CCCCCC;
     border-radius: 5px;
+    padding: 3px;
 }
 
 .todos-panel-list-task__view:hover > .todos-panel__button-clear,
@@ -194,10 +198,6 @@ html, body {
     color: #888888;
 }
 
-.todos-panel-button__clearall:focus{
-    text-decoration: underline;
-}
-
 .todos-panel__radiobutton:checked + .task-panel__text {
     border: 1px solid #EBDFDF;
     border-radius: 5px;
@@ -205,7 +205,9 @@ html, body {
 }
 
 .todos-panel__radiobutton:focus + .task-panel__text {
-    text-decoration: underline;
+    border: 2px solid #CCCCCC;
+    border-radius: 5px;
+    padding: 3px;
 }
 
 .todos-panel-actions__counter-text {
