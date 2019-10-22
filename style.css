@@ -36,20 +36,16 @@ body {
   margin: 5px; 
 }
 
-.todos-panel-button__checkall:focus {
-  border: 1px solid #ebdfdf;
-  border-radius: 5px;
-}
-
 .todos-panel-newtask {
   display: flex;
   justify-content: center;
   align-items: stretch;
-  border-bottom: 2px solid #f2f2f2;
+  border-bottom: 1px solid #f2f2f2;
 }
 
 .todos-panel {
   display: flex;
+  position: relative;
   flex-direction: column;
   width: 560px;
   background: #ffffff;
@@ -57,8 +53,9 @@ body {
 }
 
 .todos-panel::after {
-  position: relative;
-  top: 5px;
+  position: absolute;
+  top: 100%;
+  left: 0.5%;
   content: "";
   height: 5px;
   width: 99%;
@@ -67,8 +64,9 @@ body {
 }
 
 .todos-panel::before {
-  position: relative;
-  bottom: calc(-100% - 5px);
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 1%;
   content: "";
   height: 5px;
   width: 98%;
@@ -123,24 +121,7 @@ body {
   border: none;
   height: 50px;
   width: 50px;
-}
-
-.todos-panel__button-clear:focus {
-  border: 2px solid #cccccc;
-  border-radius: 5px;
-  padding: 3px;
-}
-
-.todos-panel-button__clearall:focus {
-  border: 2px solid #cccccc;
-  border-radius: 5px;
-  padding: 3px;
-}
-
-.todos-panel-button__checkall:focus {
-  border: 2px solid #cccccc;
-  border-radius: 5px;
-  padding: 3px;
+  flex-shrink: 0;
 }
 
 .todos-panel-list-task__view:hover .todos-panel__button-clear,
@@ -169,7 +150,7 @@ body {
 }
 
 .todos-panel-list__task {
-  border-bottom: 2px solid #f2f2f2;
+  border-bottom: 1px solid #f2f2f2;
 }
 
 .todos-panel-list-task__edit {
@@ -211,7 +192,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-top: 2px solid #f2f2f2;
+  border-top: 1px solid #f2f2f2;
 }
 
 .todos-panel-actions-filters__filter {
