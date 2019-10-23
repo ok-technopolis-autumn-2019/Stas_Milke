@@ -3,6 +3,11 @@
   <head>
     <meta charset="utf-8" />
     <title>todos</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,400i&display=swap&subset=cyrillic"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="main-wrapper">
@@ -14,13 +19,12 @@
           <input
             type="button"
             class="todos-panel-button__checkall"
-            value="\/"
             aria-label="Select all tasks"
           />
           <input
             type="text"
             class="todos-panel-newtask__input"
-            placeholder="input new task"
+            placeholder="What needs to be done?"
             aria-label="Add new task"
             autofocus="autofocus"
           />
@@ -31,14 +35,19 @@
               <div class="todos-panel-list-task__view">
                 <input
                   type="checkbox"
-                  class="todos-panel__checkbox"
-                  aria-label="Complete task: Task 1"
+                  id="task_1"
+                  class="todos-panel__checkbox-base"
                 />
+                <label for="task_1" class="todos-panel__checkbox">
+                  <span
+                    class="todos-panel__checkbox-view"
+                    aria-label="Complete task: Task 1"
+                  ></span>
+                </label>
                 <span class="todos-panel-list-task__text">Task 1</span>
                 <input
                   type="button"
                   class="todos-panel__button-clear"
-                  value="X"
                   aria-label="Delete task: Task 1"
                 />
               </div>
@@ -55,14 +64,19 @@
               <div class="todos-panel-list-task__view">
                 <input
                   type="checkbox"
-                  class="todos-panel__checkbox"
-                  aria-label="Complete task: Task 2"
+                  id="task_2"
+                  class="todos-panel__checkbox-base"
                 />
+                <label for="task_2" class="todos-panel__checkbox">
+                  <span
+                    class="todos-panel__checkbox-view"
+                    aria-label="Complete task: Task 2"
+                  ></span>
+                </label>
                 <span class="todos-panel-list-task__text">Task 2</span>
                 <input
                   type="button"
                   class="todos-panel__button-clear"
-                  value="X"
                   aria-label="Delete task: Task 2"
                 />
               </div>
@@ -79,14 +93,19 @@
               <div class="todos-panel-list-task__view">
                 <input
                   type="checkbox"
-                  class="todos-panel__checkbox"
-                  aria-label="Complete task: Task 3"
+                  id="task_3"
+                  class="todos-panel__checkbox-base"
                 />
+                <label for="task_3" class="todos-panel__checkbox">
+                  <span
+                    class="todos-panel__checkbox-view"
+                    aria-label="Complete task: Task 3"
+                  ></span>
+                </label>
                 <span class="todos-panel-list-task__text">Task 3</span>
                 <input
                   type="button"
                   class="todos-panel__button-clear"
-                  value="X"
                   aria-label="Delete task: Task 3"
                 />
               </div>
