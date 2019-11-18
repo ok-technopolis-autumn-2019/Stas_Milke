@@ -1,0 +1,30 @@
+@import "./todos-actionbar__filter.css";
+
+.actions-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.todos-panel-actions__counter-text {
+    margin: 10px;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    color: #888888;
+}
+
+.todos-panel-button__clearall {
+    padding: 5px;
+    background: #ffffff;
+    border: none;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    color: #888888;
+    margin-right: 5px;
+}
