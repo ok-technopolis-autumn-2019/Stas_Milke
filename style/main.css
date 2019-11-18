@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,400i&display=swap');
+
 html,
 body {
   margin: 0;
@@ -29,9 +31,7 @@ body {
 .todos-panel-button__checkall {
   height: 50px;
   width: 50px;
-  background: url(checkall.svg);
-  background-position: center;
-  background-repeat: no-repeat;
+  background: url(../res/checkall.svg) no-repeat center;
   border: none;
   margin: 5px; 
 }
@@ -94,7 +94,7 @@ body {
   + .todos-panel__checkbox
   .todos-panel__checkbox-view {
   border: 1px solid #5dc2af;
-  background-image: url(checkbox.svg);
+  background-image: url(../res/checkbox.svg);
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -115,9 +115,7 @@ body {
 
 .todos-panel__button-clear {
   opacity: 0;
-  background: url(delete.svg);
-  background-repeat: no-repeat;
-  background-position: center;
+  background: url(../res/delete.svg) no-repeat center;
   border: none;
   height: 50px;
   width: 50px;
