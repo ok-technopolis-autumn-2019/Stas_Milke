@@ -1,0 +1,98 @@
+@import "vars";
+
+.todos-panel-list {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+    min-height: 250px;
+}
+
+.todos-panel-list-task__view:hover .todos-panel__button-clear,
+.todos-panel-list-task__view:focus-within .todos-panel__button-clear {
+    opacity: 1;
+}
+
+.todos-panel-list__task {
+    border-bottom: 1px solid $color-background-white;
+}
+
+.todos-panel-list-task__edit {
+    display: none;
+}
+
+.todos-panel-list-task__input {
+    border: none;
+    height: 50px;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.todos-panel-list-task__view {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todos-panel-list-task__view:hover,
+.todos-panel-list-task__view:focus-within {
+    background: $color-panel-focused;
+}
+
+.todos-panel-list-task__text {
+    flex-grow: 1;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 30px;
+    word-break: break-all;
+    padding: 10px 0px 10px 0px;
+}
+
+.todos-panel-newtask {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    border-bottom: 1px solid $color-background-white;
+}
+
+.todos-panel__button-clear {
+    opacity: 0;
+    background: $image-delete no-repeat center;
+    border: none;
+    height: 50px;
+    width: 50px;
+    flex-shrink: 0;
+}
+
+.todos-panel-newtask__input {
+    flex-grow: 1;
+    border: none;
+    font-family: Roboto, sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 30px;
+    color: $color-light-gray;
+}
+
+.task-panel__text {
+    padding: 5px;
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    color: $color-text-gray;
+}
+
+.todos-panel-button__checkall {
+    height: 50px;
+    width: 50px;
+    background: $image-checkall no-repeat center;
+    border: none;
+    margin: 5px;
+}

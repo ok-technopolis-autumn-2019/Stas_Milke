@@ -1,0 +1,40 @@
+@import "vars";
+
+.todos-panel__checkbox-base {
+    opacity: 0;
+    margin-right: -20px;
+}
+
+.todos-panel__checkbox-view {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    background: $color-clear-white;
+    border-radius: 30px;
+    border: 1px solid $color-checkbox-unchecked;
+    margin: 10px;
+    align-items: center;
+}
+
+.todos-panel__checkbox-base:checked
++ .todos-panel__checkbox
+.todos-panel__checkbox-view {
+    border: 1px solid $color-checkbox-green;
+    background-image: $image-checkbox;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.todos-panel__checkbox-base:focus
++ .todos-panel__checkbox
+.todos-panel__checkbox-view,
+.todos-panel__checkbox-base:hover
++ .todos-panel__checkbox
+.todos-panel__checkbox-view {
+    border: 1px solid $color-light-gray;
+}
+
+.todos-panel__checkbox-base:checked ~ .todos-panel-list-task__text {
+    text-decoration: line-through;
+    color: $color-light-gray;
+}

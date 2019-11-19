@@ -1,0 +1,24 @@
+{
+  "name": "todo-milke",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ok-technopolis-autumn-2019/Stas_Milke.git"
+  },
+  "author": "Stas Milke",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ok-technopolis-autumn-2019/Stas_Milke/issues"
+  },
+  "homepage": "https://github.com/ok-technopolis-autumn-2019/Stas_Milke#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.23.6"
+  }
+}

@@ -1,0 +1,32 @@
+@import "vars";
+
+.todos-panel {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 560px;
+    background: $color-clear-white;
+    box-shadow: $shadow;
+}
+
+.todos-panel::after {
+    position: absolute;
+    top: 100%;
+    left: 0.5%;
+    content: "";
+    height: 5px;
+    width: 99%;
+    margin: 0 auto;
+    box-shadow: $shadow;
+}
+
+.todos-panel::before {
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 1%;
+    content: "";
+    height: 5px;
+    width: 98%;
+    margin: 0 auto;
+    box-shadow: $shadow;
+}
