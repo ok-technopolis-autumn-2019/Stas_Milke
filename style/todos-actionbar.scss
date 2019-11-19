@@ -1,4 +1,5 @@
-@import "./todos-actionbar__filter.css";
+@import "todos-actionbar__filter";
+@import "vars";
 
 .actions-bar {
     display: flex;
@@ -13,18 +14,18 @@
     font-weight: 300;
     font-size: 14px;
     line-height: 20px;
-    color: #888888;
+    color: $color-text-gray;
 }
 
 .todos-panel-button__clearall {
     padding: 5px;
-    background: #ffffff;
+    background: $color-clear-white;
     border: none;
     font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
     line-height: 20px;
-    color: #888888;
+    color: $color-text-gray;
     margin-right: 5px;
 }

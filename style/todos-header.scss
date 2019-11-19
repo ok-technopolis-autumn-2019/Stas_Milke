@@ -1,3 +1,5 @@
+@import "vars";
+
 .todos-header {
     margin-top: 10px;
     margin-bottom: 15px;
@@ -9,6 +11,6 @@
     font-weight: 200;
     font-size: 100px;
     line-height: 100px;
-    color: #cccccc;
+    color: $color-light-gray;
     margin: 0;
 }

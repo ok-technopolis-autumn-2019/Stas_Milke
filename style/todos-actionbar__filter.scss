@@ -1,3 +1,5 @@
+@import "vars";
+
 .todos-panel-actions-filters__filter {
     display: flex;
     padding: 0 10px 0 10px;
@@ -11,13 +13,13 @@
 }
 
 .todos-panel__radiobutton:checked + .task-panel__text {
-    border: 1px solid #ebdfdf;
+    border: 1px solid $color-filter-focused;
     border-radius: 5px;
     padding: 4px;
 }
 
 .todos-panel__radiobutton:focus + .task-panel__text {
-    border: 2px solid #cccccc;
+    border: 2px solid $color-light-gray;
     border-radius: 5px;
     padding: 3px;
 }

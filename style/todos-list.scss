@@ -1,3 +1,5 @@
+@import "vars";
+
 .todos-panel-list {
     display: flex;
     flex-direction: column;
@@ -13,7 +15,7 @@
 }
 
 .todos-panel-list__task {
-    border-bottom: 1px solid #f2f2f2;
+    border-bottom: 1px solid $color-background-white;
 }
 
 .todos-panel-list-task__edit {
@@ -38,7 +40,7 @@
 
 .todos-panel-list-task__view:hover,
 .todos-panel-list-task__view:focus-within {
-    background: #fafafa;
+    background: $color-panel-focused;
 }
 
 .todos-panel-list-task__text {
@@ -55,12 +57,12 @@
     display: flex;
     justify-content: center;
     align-items: stretch;
-    border-bottom: 1px solid #f2f2f2;
+    border-bottom: 1px solid $color-background-white;
 }
 
 .todos-panel__button-clear {
     opacity: 0;
-    background: url(../res/delete.svg) no-repeat center;
+    background: $image-delete no-repeat center;
     border: none;
     height: 50px;
     width: 50px;
@@ -75,7 +77,7 @@
     font-weight: 300;
     font-size: 24px;
     line-height: 30px;
-    color: #cccccc;
+    color: $color-light-gray;
 }
 
 .task-panel__text {
@@ -84,13 +86,13 @@
     font-weight: 300;
     font-size: 14px;
     line-height: 20px;
-    color: #888888;
+    color: $color-text-gray;
 }
 
 .todos-panel-button__checkall {
     height: 50px;
     width: 50px;
-    background: url(../res/checkall.svg) no-repeat center;
+    background: $image-checkall no-repeat center;
     border: none;
     margin: 5px;
 }

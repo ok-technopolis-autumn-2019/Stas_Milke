@@ -1,15 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,400i&display=swap');
-@import "todos-header.css";
-@import "./todos-checkbox.css";
-@import "./todos-panel.css";
-@import "./todos-actionbar.css";
-@import "./todos-list.css";
+@import "todos-header";
+@import "todos-checkbox";
+@import "todos-panel";
+@import "todos-actionbar";
+@import "todos-list";
+@import "vars";
 
 html,
 body {
   margin: 0;
   padding: 0;
-  background: #f2f2f2;
+  background: $color-background-white;
 }
 
 .main-wrapper {
